@@ -3,7 +3,7 @@ import {allQuestions} from './questions.js';
 let playerPoints = 0;
 
 const input = document.getElementById("text");
-const numberOfQuestions = 5;
+const numberOfQuestions = 40;
 
 function generateRandomNumber() {
   return Math.floor(Math.round(Math.random() * (numberOfQuestions - 1)));
@@ -43,7 +43,9 @@ const countDown = setInterval(()=>{
     if(timeSecond<1){
         rNumber = generateRandomNumber()
         changeQuestion()
+        document.querySelector(".tBox").style.display = 'contents';
         timeSecond = 15;
+        
     }
 },1000)
 
@@ -51,12 +53,16 @@ const countDown = setInterval(()=>{
 const searchBox = document.querySelector(".tBox input");
 
 function checkAnswer(){
-  if(randomAnswer(allQuestions) === searchBox.value){
+  if(randomAnswer(allQuestions) === searchBox.value || randomAnswer(allQuestions)[0] === searchBox.value || randomAnswer(allQuestions)[1] === searchBox.value || randomAnswer(allQuestions)[2] === searchBox.value || randomAnswer(allQuestions)[3] === searchBox.value || randomAnswer(allQuestions)[4] === searchBox.value || randomAnswer(allQuestions)[5] === searchBox.value){
     console.log("Correct Answer")
     playerPoints += 10;
+    document.querySelector(".score").innerHTML = `Score: ${playerPoints}`;
     console.log(`Score: ${playerPoints}`);
+    document.querySelector(".tBox").style.display = 'none';
   }
 }
+
+
 
 // Execute a function when the user presses a key on the keyboard
 input.addEventListener("keypress", function(event) {
@@ -72,3 +78,4 @@ input.addEventListener("keypress", function(event) {
 });
 
 changeQuestion()
+
