@@ -124,5 +124,15 @@ html {
     text-align: center;
     margin-top: 20px;
   }
+
+  .score{
+    position:absolute;
+    color: #ffffff;
+    font-family: FonteGrossa;
+    font-size: 30px;
+    margin-left:50px;
+    margin-top: 20px;
+  }
+
   
   
