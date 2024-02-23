@@ -10,12 +10,12 @@ html {
   
   @font-face {
       font-family:'Suez';
-      src:url("../fonts/Suez.ttf");
+      src:url("fonts/Suez.ttf");
   }
   
   @font-face {
       font-family:'Roboto';
-      src:url("../fonts/Roboto.ttf");
+      src:url("fonts/Roboto.ttf");
   }
   
   
