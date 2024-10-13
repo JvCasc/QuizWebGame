@@ -134,5 +134,29 @@ html {
     margin-top: 20px;
   }
 
+  .tela2{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin: 0 auto 0 auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 0px;
+    border-radius: 15px;
+    font-size: 24px;
+    padding: 6px 32px;
+  }
+
+  .answer{
+    font-size: 70px;
+    font-family: FonteGrossa;
+    color: white;
+  }
   
+  .era{
+    font-size: 40px;
+    font-family: FonteGrossa;
+    color: white;
+    padding: 10px;
+  }
   
