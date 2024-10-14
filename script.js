@@ -36,7 +36,7 @@ function changeQuestion(){
 }
 
 function showAnswer(){
-  document.querySelector(".answer").textContent = randomAnswer(allQuestions); // Supondo que você mostre a resposta na tela2
+  document.querySelector(".answer").textContent = randomAnswer(allQuestions)[0]; // Supondo que você mostre a resposta na tela2
   document.querySelector(".tela1").style.display = 'none';
   document.querySelector(".tela2").style.display = 'block';
 }
