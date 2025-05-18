@@ -353,7 +353,7 @@ const allQuestions = {
     q59: {
         question: qAnime,
         img: "Images/fullMetalAlchemist.png",
-        answer: ["FULL METAL ALCHEMIST", "FULLMETAL ALCHEMIST"]
+        answer: ["FULL METAL ALCHEMIST", "FULLMETAL ALCHEMIST", "FMA"]
     }
     ,
     q60: {

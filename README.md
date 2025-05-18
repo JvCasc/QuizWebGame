@@ -1,6 +1,16 @@
-# Pop-Sauce-FanMade
-My version of Pop Sauce Game from JKLM.fun
+# 🎮 Jogo de Perguntas e Respostas
 
-Silly project made for fun just to play with friends 
+Versão fanmade inspirada no jogo Pop Sauce do [JKLM.fun](https://jklm.fun), desenvolvida com HTML, CSS e JavaScript. O objetivo é adivinhar corretamente o nome de filmes, animes, álbuns ou países com base em uma imagem exibida na tela.
 
-<img src = 'https://github.com/JvCasc/Pop-Sauce-Copy/assets/37716511/3487e653-79a1-49d3-b016-f1441a9f07fe' align-items = center>
+---
+
+## 🔍 Funcionalidades
+
+- 🧠 Perguntas aleatórias com base em imagens (filmes, animes, álbuns, bandeiras, etc)
+- ⏱️ Timer de 15 segundos por pergunta
+- 🖱️ Resposta via teclado (Enter)
+- ✅ Validação de múltiplas formas de resposta
+- 🎯 Pontuação por acertos
+- 🎨 Interface customizada e responsiva
+
+---
