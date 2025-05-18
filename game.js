@@ -5,6 +5,8 @@ let playerPoints = 0;
 let currentQuestion = null;
 const searchBox = document.querySelector(".tBox input");
 
+const popSound = new Audio('Sounds/pop.wav');
+
 // Gera uma pergunta aleatória e atualiza a tela
 function changeQuestion() {
   const questionKeys = Object.keys(allQuestions);
@@ -36,12 +38,14 @@ function checkAnswer(onTimeOver) {
   }
 
   if (isCorrect) {
+    popSound.play();
     console.log("Correct Answer");
     playerPoints += 10;
     document.querySelector(".score").innerHTML = `Score: ${playerPoints}`;
     onTimeOver();
   }
 }
+
 
 function startGame() {
   changeQuestion();
