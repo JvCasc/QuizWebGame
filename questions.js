@@ -598,7 +598,7 @@ const allQuestions = {
     ,
     q100: {
         question: qAnime,
-        img: "Images/yourLieInApril1.jpg",
+        img: "Images/yourLieInApril1.png",
         answer: ["YOUR LIE IN APRIL", "SHIGATSU WA KIMI NO USO"]
     }
     ,
