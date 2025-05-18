@@ -14,3 +14,5 @@ Versão fanmade inspirada no jogo Pop Sauce do [JKLM.fun](https://jklm.fun), des
 - 🎨 Interface customizada e responsiva
 
 ---
+
+![image](https://github.com/user-attachments/assets/5bc3f92e-c90c-452d-8aae-23c87c64e114)
