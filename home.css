@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @font-face {
+      font-family:'FonteGrossa';
+      src:url("../fonts/MadeInfinity.otf");
+  }
+  
+  @font-face {
+      font-family:'Suez';
+      src:url("fonts/Suez.ttf");
+  }
+  
+  @font-face {
+      font-family:'Roboto';
+      src:url("fonts/Roboto.ttf");
+  }
+  
+  
+  body{
+    background-color: #352F44;
+    margin:0;
+    padding:0;
+  }
+
+  .urltoCopy{
+    font-family: FonteGrossa;
+    cursor: pointer;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    background: #5C5470;
+    padding: 0 10px;
+    color: white;
+    height: 40px; /* Defina a altura desejada */
+    box-sizing: border-box; 
+  } 
+
+.main{
+    height: calc(100vh - 40px); /* Desconta a altura do header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-button{
+    display: flex;
+    padding: 20px 70px;
+    font-size: 1.8rem;
+    background-color: #5C5470;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: FonteGrossa;
+    box-sizing: border-box; 
+    text-decoration: none; 
+}
