@@ -32,7 +32,12 @@ function onTimeOver() {
     resetTimer(onTimeOver); // reinicia o timer após mudar a pergunta
     document.querySelector(".tela2").style.display = 'none';
     document.querySelector(".tela1").style.display = 'block';
+    setTimeout(() => {
+    document.getElementById("text").focus();
+  }, 50);
+
   }, 3000);
+
 }
 
 

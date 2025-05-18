@@ -13,4 +13,8 @@ function showAnswer(currentQuestion) {
   document.querySelector(".tela2").style.display = 'block';
 }
 
-export { showAnswer };  
+function updateScore(score) {
+  document.querySelector(".score").textContent = `Score: ${score}`;
+}
+
+export { showAnswer, updateScore };  

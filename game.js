@@ -1,11 +1,21 @@
 import { normalizeText } from './auxiliar.js';
 import { allQuestions } from './questions.js';
+import { updateScore } from './ui.js';
 
 let playerPoints = 0;
 let currentQuestion = null;
 const searchBox = document.querySelector(".tBox input");
 
 const popSound = new Audio('Sounds/pop.wav');
+
+function setPlayerPoints(value) {
+  playerPoints = value;
+  updateScore(playerPoints);
+}
+
+function getPlayerPoints() {
+  return playerPoints;
+}
 
 // Gera uma pergunta aleatória e atualiza a tela
 function changeQuestion() {
@@ -21,6 +31,9 @@ function changeQuestion() {
 
   document.querySelector(".question").innerHTML = currentQuestion.text;
   document.querySelector(".questionImage").src = currentQuestion.img;
+
+  document.getElementById("text").focus();
+
 }
 
 
@@ -41,7 +54,9 @@ function checkAnswer(onTimeOver) {
     popSound.play();
     console.log("Correct Answer");
     playerPoints += 10;
-    document.querySelector(".score").innerHTML = `Score: ${playerPoints}`;
+    updateScore(playerPoints);
+    localStorage.setItem("lastScore", playerPoints);
+
     onTimeOver();
   }
 }
@@ -55,4 +70,4 @@ function getCurrentQuestion() {
   return currentQuestion;
 }
 
-export { startGame, changeQuestion, checkAnswer, getCurrentQuestion };
+export { startGame, changeQuestion, checkAnswer, getCurrentQuestion, getPlayerPoints, setPlayerPoints };
